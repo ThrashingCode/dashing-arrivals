@@ -1,3 +1,5 @@
+require('newrelic');
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -45,6 +47,5 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
-
 
 module.exports = app;
